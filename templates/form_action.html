@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Fetch total Number Of Issues from GitHub</title>
+<style="table,th,td = border: 1px solid black;"></style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Enter the full url of repository</h1>
+              <h2> example:https://github.com/Shippable/support <h2>
+            </div>
+            <div id="content">
+
+
+<table style="width:100%">
+  <tr>
+    <td>Total number of open issues:</td>
+    <td>{{open_issues}}</td>
+
+  </tr>
+  <tr>
+    <td>Number of open issues that were opened in the last 24 hours</td>
+    <td>{{last_24_hours}}</td>
+  </tr>
+
+ <tr>
+    <td>Number of open issues that were opened more than 24 hours ago but less than 7 days ago</td>
+    <td>{{issues_last7}}</td>
+  </tr>
+<tr>
+    <td>Number of open issues that were opened more than 7 days ago</td>
+    <td>{{issues_7days_ago}}</td>
+  </tr>
+
+</table>
+            </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>
